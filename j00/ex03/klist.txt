@@ -1,0 +1,7 @@
+Credentials cache: API:A3BE4267-3EC3-4FCF-89A5-2C0948E8B387
+        Principal: lpan@42.FR
+
+  Issued                Expires               Principal
+Jul  2 13:42:31 2018  Jul  9 13:42:31 2018  krbtgt/42.FR@42.FR
+Jul  2 13:42:34 2018  Jul  9 13:42:31 2018  ldap/ldap-proxy.42.fr@42.FR
+Jul  2 13:42:34 2018  Jul  9 13:42:31 2018  HTTP/student-storage-1.42.fr@42.FR
