@@ -20,9 +20,9 @@
 
 int main(int ac, char **av)
 {
-	int i = 1;
-	int  t[32] = {0}; 
-	int j ;
+	int i;
+	int t[32] = {0}; 
+	int j;
 
 	if(ac == 1)
 	{
@@ -46,7 +46,6 @@ int main(int ac, char **av)
 				t['z' - av[i][j] + 6] = 1;
 				j++;
 			}
-
 			if (av[i][j])
 			{
 				write(1,"Invalid Option\n",15);
@@ -57,16 +56,15 @@ int main(int ac, char **av)
 		i++;
 	}
 	i = 0;
-		while (i < 32)
-		{
+	while (i < 32)
+	{
 		t[i] = '0' + t[i];
-		write(1,&t[i++],1);
-			if(i == 32)
-				write(1,"\n",1);
-			else if(i % 8 == 0)
-				write(1," ",1);
-
-		}
-
+		write(1,&t[i],1);
+		i++;
+		if(i == 32)
+			write(1,"\n",1);
+		else if(i % 8 == 0)
+			write(1," ",1);
+	}
 	return 0;
 }

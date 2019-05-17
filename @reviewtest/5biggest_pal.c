@@ -20,7 +20,7 @@
 
 #include <string.h> 
 #include <unistd.h>
-
+  
 void printSubStr(char* str, int low, int high) 
 { 
     while(low <= high) 
@@ -29,16 +29,22 @@ void printSubStr(char* str, int low, int high)
           low++;
     }
 } 
-  
+
 void longestPalSubstr(char *str) 
 { 
-    int maxLength = 1;
-    int start = 0; 
-    int len = strlen(str); 
-    int low, high; 
+    int maxLength;
+    int start; 
+    int len; 
+    int low;
+    int high; 
     int i;
 
+    start = 0;
+    len = 0;
     i = 1;
+    maxLength = 1;
+    while(str[len])
+        len++;
     while (i < len) 
     { 
         low = i - 1; 
@@ -69,7 +75,7 @@ void longestPalSubstr(char *str)
     } 
     printSubStr(str, start, start + maxLength - 1); 
 } 
-  
+
 int main(int argc, char **argv) 
 { 
     if(argc == 2)

@@ -16,7 +16,7 @@ void ft_list_sort(t_list **begin_list, int (*cmp)())
 {
 	t_list *i;
 	t_list *j;
-	void *temp;
+	int *temp;
 
 	i = *begin_list;
 	j = i -> next;
